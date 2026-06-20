@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Freelance Web Samples</title>
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --dark: #101828;
+      --muted: #667085;
+      --line: #e4e7ec;
+      --orange: #f97316;
+      --orange-dark: #c2410c;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--dark);
+      background:
+        radial-gradient(circle at top left, rgba(249, 115, 22, 0.16), transparent 34rem),
+        linear-gradient(135deg, #ffffff, var(--bg));
+    }
+
+    main {
+      width: min(1080px, calc(100% - 40px));
+      min-height: 100vh;
+      margin: 0 auto;
+      padding: 70px 0;
+      display: grid;
+      align-content: center;
+      gap: 34px;
+    }
+
+    .hero {
+      max-width: 820px;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--orange-dark);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.7rem, 7vw, 5rem);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: clamp(1.1rem, 2vw, 1.45rem);
+      line-height: 1.55;
+    }
+
+    .demo-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 28px;
+      align-items: center;
+      padding: clamp(24px, 4vw, 36px);
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      box-shadow: 0 20px 48px rgba(16, 24, 40, 0.08);
+    }
+
+    .demo-card h2 {
+      margin: 0;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+    }
+
+    .demo-card p {
+      margin: 12px 0 0;
+      max-width: 680px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 24px;
+      border-radius: 10px;
+      background: var(--orange);
+      color: #ffffff;
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 160ms ease, transform 160ms ease;
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      background: var(--orange-dark);
+      transform: translateY(-1px);
+    }
+
+    .note {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    @media (max-width: 760px) {
+      main {
+        width: min(100% - 28px, 1080px);
+        padding: 36px 0;
+      }
+
+      .demo-card {
+        grid-template-columns: 1fr;
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Portfolio repository</p>
+      <h1>Freelance Web Samples</h1>
+      <p class="subtitle">Small web demos for bug fixing, landing pages and front-end improvements</p>
+    </section>
+
+    <article class="demo-card">
+      <div>
+        <h2>Web Bug Fix Demo - PowerFit</h2>
+        <p>A before/after demo showing common HTML, CSS and JavaScript bugs in a fictional gym landing page, plus the corrected version.</p>
+      </div>
+      <a class="button" href="./web-bug-fix-powerfit-demo/index.html">View PowerFit Demo</a>
+    </article>
+
+    <p class="note">All samples are fictional portfolio demos. No real client data is included.</p>
+  </main>
+</body>
+</html>

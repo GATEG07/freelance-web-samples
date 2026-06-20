@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PowerFit Gym</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">PowerFit</a>
+    <button class="menu-button" id="menuButton" aria-label="Open navigation" aria-expanded="false" aria-controls="siteNavigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" id="siteNavigation">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#plans">Plans</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Train stronger every week</p>
+        <h1>Build your best body with PowerFit coaching</h1>
+        <p class="hero-text">Join a friendly gym with guided strength training, conditioning classes and simple plans for busy people.</p>
+        <a class="button primary-button" href="#contact">Start today</a>
+      </div>
+      <div class="hero-visual" aria-label="Abstract gym training visual">
+        <div class="plate plate-one"></div>
+        <div class="plate plate-two"></div>
+        <div class="bar"></div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="section-heading">
+        <p class="eyebrow">Services</p>
+        <h2>Training support for every goal</h2>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <span class="card-icon">01</span>
+          <h3>Strength Training</h3>
+          <p>Structured workouts focused on safe technique and steady progress.</p>
+        </article>
+        <article class="service-card">
+          <span class="card-icon">02</span>
+          <h3>Group Classes</h3>
+          <p>High-energy sessions for conditioning, mobility and full-body fitness.</p>
+        </article>
+        <article class="service-card">
+          <span class="card-icon">03</span>
+          <h3>Personal Coaching</h3>
+          <p>One-to-one guidance for members who want a clearer training plan.</p>
+        </article>
+        <article class="service-card">
+          <span class="card-icon">04</span>
+          <h3>Nutrition Basics</h3>
+          <p>Simple habit guidance to support training without complicated rules.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section plans-section" id="plans">
+      <div class="section-heading">
+        <p class="eyebrow">Plans</p>
+        <h2>Choose a simple membership</h2>
+      </div>
+      <div class="plans">
+        <article class="plan-card">
+          <h3>Starter</h3>
+          <p class="price">$29<span>/mo</span></p>
+          <p>Gym access and beginner workout guidance.</p>
+          <a class="button plan-button" href="#contact">Choose plan</a>
+        </article>
+        <article class="plan-card featured">
+          <h3>Performance</h3>
+          <p class="price">$59<span>/mo</span></p>
+          <p>Gym access, classes and monthly coaching check-in.</p>
+          <a class="button plan-button" href="#contact">Choose plan</a>
+        </article>
+        <article class="plan-card">
+          <h3>Coaching</h3>
+          <p class="price">$99<span>/mo</span></p>
+          <p>Personal coaching sessions and tailored weekly plan.</p>
+          <a class="button plan-button" href="#contact">Choose plan</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-copy">
+        <p class="eyebrow">Contact</p>
+        <h2>Book a free intro visit</h2>
+        <p>Send a message and the PowerFit team will contact you about classes, plans or coaching options.</p>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <label for="name">
+          Name
+          <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name">
+          <span class="field-error" id="nameError"></span>
+        </label>
+        <label for="email">
+          Email
+          <input type="text" id="email" name="email" placeholder="you@example.com" autocomplete="email" inputmode="email">
+          <span class="field-error" id="emailError"></span>
+        </label>
+        <label for="message">
+          Message
+          <textarea id="message" name="message" placeholder="Tell us what you are looking for"></textarea>
+          <span class="field-error" id="messageError"></span>
+        </label>
+        <button class="button submit-button" type="submit">Send message</button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>PowerFit Gym - Fictional demo landing page</p>
+    <a href="#home">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
